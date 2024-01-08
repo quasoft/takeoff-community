@@ -3,7 +3,7 @@
 # Command without reload: uvicorn app.main:app --host '0.0.0.0' --port '80'
 if [ -n "$RELOAD" ]; then
     echo "Serving on ${HOST_URL:-http://localhost:8000} with reload"
-    uvicorn app.main:app --host '0.0.0.0' --port '80' --reload
+    uvicorn app.main:app --host '0.0.0.0' --port $API_PORT --reload
 else
-    uvicorn app.main:app --host '0.0.0.0' --port '80'
+    uvicorn app.main:app --host '0.0.0.0' --port  $API_PORT
 fi
