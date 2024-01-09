@@ -1,9 +1,10 @@
 #!/bin/bash
 # Start FastAPI server. If the RELOAD environment variable is set, add "--reload"
 # Command without reload: uvicorn app.main:app --host '0.0.0.0' --port '80'
+echo ${API_PORT}
 if [ -n "$RELOAD" ]; then
     echo "Serving on ${HOST_URL:-http://localhost:8000} with reload"
-    uvicorn app.main:app --host '0.0.0.0' --port $API_PORT --reload
+    uvicorn app.main:app --host '0.0.0.0' --port ${API_PORT} --reload
 else
-    uvicorn app.main:app --host '0.0.0.0' --port  $API_PORT
+    uvicorn app.main:app --host '0.0.0.0' --port  ${API_PORT}
 fi
