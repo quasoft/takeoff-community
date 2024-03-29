@@ -10,8 +10,6 @@
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#sparkles-community-features">Features</a> | &#xa0;
-  <a href="https://discord.com/invite/SDnUJSPg7t">Discord</a> &#xa0; &#xa0;
-
 </p>
 
 ## :dart: About ##
@@ -30,8 +28,6 @@ For usage information, tutorials, and usage examples, see the [docs](https://doc
 
 :heavy_check_mark: Support for encoder-decoder (T5 family) and decoder models
 
-For the pro edition, including multi-gpu inference, int4 quantization, and more. [contact us](mailto:hello@titanml.co)
-
 ## 🚊 Usage
 
 To use the inference server, use the `iris` launcher (you'll need to have docker installed, too). To install iris, run 
@@ -48,7 +44,7 @@ To experiment with the resulting server, navigate to http://localhost:8000/demos
 
 ## :checkered_flag: Contributing ##
 ### Get started
-We welcome community contributions! Please contact us on our [discord](https://discord.com/invite/SDnUJSPg7t) if you have any questions!
+We welcome community contributions!
 
 ### Building a dev environment
 To build the development environment, run the following commands
